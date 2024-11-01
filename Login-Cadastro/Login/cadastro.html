@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <!--Desing do Login-->
+    <main class="main-login">
+        <div class="background-circle"></div><!-- Circulo azul de fundo -->
+        <div class="box-center">
+            <!-- Parte da Mascote e nome -->
+            <div class="mascote">
+                <h1 class="font-zeep">Zeep</h1>
+                <div class="image-zeep">
+                    <img src="imagens/Zeep.webp" alt="Mascote Zeep" width="300px">
+                </div>
+            </div>
+
+            <!-- Parte do formulário de acesso -->
+            <div class="login-acesso">
+                <h2 class="font-login">Cadastre-se</h2>
+                <div class="input-center">
+                    <form action="POST">
+                        <input class="input-acesso" type="text" name="nome" placeholder="Nome">
+                        <input class="input-acesso" type="email" name="email" placeholder="Email">
+
+                        <input class="input-acesso" type="password" name="password" placeholder="Senha">
+
+                        <label for="dataNascimento" class="label-input">Escolha sua data de nascimento:</label>
+                        <input class="input-acesso" type="date" name="dataNascimento" id="dataNascimento">
+
+                        <label for="genero" class="label-input">Escolha seu gênero:</label>
+                        <select class="input-acesso" name="genero" id="genero" required>
+                            <option value="" disabled selected>Escolha seu gênero</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+
+                        <input class="botao-acesso" type="submit" name="submit" value="Acessar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

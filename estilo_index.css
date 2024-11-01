@@ -1,0 +1,75 @@
+/*Importação de fonte de texto - Google*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*Corpo do index*/
+body{
+    /* background: url("Estilo_Index/Imagens_Cabeçalho/Escritorio_predios_iluminação.jpg") no-repeat center; */
+    background-size: cover;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif, arial;
+}
+
+/*os links*/
+a{
+    color: #ddd;
+    text-decoration: none;
+}
+
+/*Parte dp Cabeçalho*/
+header{
+    background-color: black;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.header-bar{
+    width: 80%;
+    margin: auto;
+    background-color: black;
+}
+
+.nav-bar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/*Logo*/
+.logo{
+    position: relative;
+    height: 20px;
+}
+
+/*Arrumar logo*/
+.logo-max{
+    width: 250px;
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    top: -30%;
+    translate:(-50%, -50%)
+}
+
+.conj-botao-menu{
+    width: 150px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.botao-entrar{
+    background-color: #00A3FF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -30%;
+    translate:(-50%, -50%)
+}

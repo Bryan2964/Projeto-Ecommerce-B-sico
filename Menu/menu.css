@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra grande depois do click no menu, aparece os links */
+.link-nav-menu {
+    background-color: rgb(60, 61, 63);
+    margin-top: 68px;
+    height: 90vh;
+    width: 100%;
+    max-width: 200px;
+    position: fixed;
+    top: 0;
+    right: -450px; /* Esconde o menu fora da tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    transition: .3s ease;
+    z-index: 999; /* Adiciona z-index alto para ficar acima de outros elementos */
+}
+
+.link-nav-menu.active {
+    right: 0; /* Mostra o menu quando ativo */
+}
+
+.conjunto-links {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.links-menu {
+    margin: 15px;
+}
+
+.links-menu a {
+    color: white; /* Define a cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    padding: 10px 15px; /* Adiciona padding para aumentar a área clicável */
+    display: block; /* Faz o link ocupar toda a área do <li> */
+    transition: background-color 0.3s; /* Transição para efeito hover */
+}
+
+.links-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efeito hover */
+}
+
+
+/* Posição do botão menu */
+.botao-menu {
+    height: 30px;
+    width: 30px;
+    margin-left: 120px;
+    top: -8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1000; /* Garante que o botão também fique acima */
+}
+
+/* Desenho das barrinhas do menu */
+.botao-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s ease;
+}
+
+/* Posição das barrinhas do Menu */
+.botao-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.botao-menu span:nth-child(2) {
+    top: 50%;
+}
+
+.botao-menu span:nth-child(3) {
+    top: 75%;
+}
+
+/* Active state - Depois do click se torna um X */
+.botao-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.botao-menu.active span:nth-child(2) {
+    opacity: 0; /* Oculta a barra do meio */
+}
+
+.botao-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}

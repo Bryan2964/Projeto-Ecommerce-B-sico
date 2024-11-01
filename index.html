@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeep</title>
+    <link rel="stylesheet" href="estilo_index.css">
+    <link rel="stylesheet" href="Menu/menu.css">
+    <link rel="stylesheet" href="Main Conteudo Principal/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-bar">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <div class="logo-max">
+                        <a href="#">
+                            <img src="Estilo_Index/Imagens_Cabeçalho/Logo_Site.jpg" alt="logo Zeep" width="50px"> 
+                            Zeep
+                        </a>
+                    </div>
+                </div>
+
+                <div class="conj-botao-menu">
+                    <div class="botao-entrar">
+                        <a href="Login-Cadastro/Login/login.html">Entrar</a>
+                    </div>
+
+                    <div class="caixa-menu">
+                        <div class="botao-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="link-nav-menu">
+                    <ul class="conjunto-links">
+                        <li class="links-menu"><a href="#conta">Conta</a></li>
+                        <li class="links-menu"><a href="#categoria">Categoria</a></li>
+                        <li class="links-menu"><a href="#carrinho">Carrinho</a></li>
+                        <li class="links-menu"><a href="#notificacao">Notificação</a></li>
+                        <li class="links-menu"><a href="#ajuda">Ajuda</a></li>
+                    </ul>                   
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-center">
+        <!-- Banner de produtos -->
+        <div class="banner">
+            <div class="container">
+                <div class="slider-container has-scrollbar">
+                    <!-- Os produtos serão adicionados aqui pelo JavaScript -->
+                </div>
+                <button class="slider-btn left" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="slider-btn right" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <br><br>
+
+        <h2>Produtos Eletrônicos</h2>
+        <div id="product-list"></div> <!-- Produtos serão exibidos aqui -->
+    </main>
+
+    <script src="Menu/MenuJS.js"></script> <!-- Funcionalidade do botão menu -->
+    <script src="Main Conteudo Principal/Product.js"></script>
+
+</body>
+</html>

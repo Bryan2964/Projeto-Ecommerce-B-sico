@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adiciona box-sizing para melhor controle de espaçamento */
+    font-family: 'Inter', sans-serif; /* Font-family mais clara */
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-login {
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    height: 100vh;
+    position: relative; /* Necessário para o círculo de fundo */
+}
+
+/* Círculo de fundo */
+.background-circle {
+    position: absolute;
+    width: 100rem;
+    height: 50rem;
+    background: radial-gradient(circle, rgba(0, 180, 255, 0.8), transparent 100%);
+    border-radius: 50%;
+    filter: blur(50px); /* Desfoque */
+    z-index: -1; /* Coloca atrás da mascote */
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+/* Conjunto da logo e formulário */
+.box-center {
+    width: 80%;
+    max-width: 900px; /* Limite máximo para evitar excessiva largura em telas grandes */
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Parte da esquerda - mascote */
+.mascote {
+    width: 350px;
+    height: 100%;
+}
+
+.font-zeep {
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.image-zeep {
+    margin-top: 55px;
+    text-align: center;
+}
+
+/* Parte da direita Login */
+.login-acesso {
+    width: 500px;
+    height: 100%;
+    background-color: #ddd;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+}
+
+.font-login {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 25px 0 55px; /* Simplifica margens */
+}
+
+.input-center {
+    text-align: center;
+}
+
+.input-acesso {
+    margin-top: 15px;
+    width: 60%;
+    height: 40px;
+    background-color: #ffffff;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.botao-acesso {
+    margin-top: 25px;
+    width: 60%;
+    padding: 10px; /* Aumentei o padding para ficar mais espaçado */
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #46B1E1;
+    cursor: pointer; /* Adiciona um cursor pointer ao botão */
+}
+
+.sem-senha {
+    text-align: right;
+    margin-top: 5px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.no-senha {
+    font-size: 15px;
+    color: #6b6b6b;
+    margin-bottom: 20px; /* Ajuste para dar mais espaço entre o link e o botão */
+    display: block; /* Certificar-se que o link ocupa uma linha inteira */
+}
+
+.cadastre-se {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .box-center {
+        flex-direction: column; /* Altera a direção em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+    
+    .mascote {
+        margin-bottom: 20px; /* Adiciona espaçamento entre a mascote e o formulário */
+    }
+    
+    .login-acesso {
+        width: 100%; /* Ajusta a largura do formulário em telas pequenas */
+        max-width: 400px; /* Limita a largura máxima */
+    }
+}

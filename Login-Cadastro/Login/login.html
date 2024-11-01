@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Design do Login -->
+    <main class="main-login"> <!-- Conteúdo todo -->
+        <div class="background-circle"></div> <!-- Círculo azul de fundo -->
+        <div class="box-center"> <!-- Caixa para centralizar as duas colunas -->
+            <div class="mascote"> <!-- Mascote e o nome logo -->
+                <h1 class="font-zeep">Zeep</h1>
+                <div class="image-zeep">
+                    <img src="imagens/Zeep.webp" alt="Mascote Zeep" width="300">
+                </div>
+            </div>
+
+            <div class="login-acesso"> <!-- Login de acessar -->
+                <h2 class="font-login">Fazer Login</h2>
+                <div class="input-center">
+                    <form action="POST"> <!-- Formulário do login -->
+                        <input class="input-acesso" type="email" name="email" placeholder="Email" required> <!-- Email -->
+                        <input class="input-acesso" type="password" name="password" placeholder="Senha" required> <!-- Senha -->
+                        <div class="sem-senha">
+                            
+                            <a class="no-senha" href="#">Esqueceu a senha?</a> <!-- Mover para baixo -->
+                        </div>
+                        <input class="botao-acesso" type="submit" name="submit" value="Acessar"> <!-- Botão de acessar -->
+                    </form>
+                    <p class="cadastre-se">Ainda não possui uma conta? <a href="cadastro.html">Cadastre-se</a></p> <!-- Link de cadastro -->
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-login {
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    height: 100vh;
+    position: relative; /* Para posicionar o círculo de fundo */
+}
+
+/* Circulo de fundo */
+.background-circle {
+    position: absolute;
+    width: 100rem;
+    height: 50rem;
+    background: radial-gradient(circle, rgba(0, 180, 255, 0.8), transparent 100%);
+    border-radius: 50%;
+    filter: blur(50px); /* Desfoque */
+    z-index: -1; /* Coloca atrás do conteúdo */
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+/* Conjunto da logo e formulário */
+.box-center {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Parte da mascote */
+.mascote {
+    width: 350px;
+    text-align: center;
+}
+
+.font-zeep {
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+.image-zeep {
+    margin-top: 25px;
+}
+
+/* Parte da direita - Login */
+.login-acesso {
+    width: 500px;
+    height: 100%;
+    background-color: #ddd;
+    border-radius: 25px;
+    padding: 20px; /* Adicionei padding para espaçamento interno */
+}
+
+.font-login {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.input-center {
+    text-align: center;
+}
+
+.input-acesso {
+    margin-top: 10px;
+    width: 80%;
+    height: 40px;
+    background-color: #ffffff;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.label-input {
+    display: block;
+    margin: 15px auto 5px auto;
+    text-align: left;
+    width: 80%;
+    font-size: 14px;
+}
+
+.botao-acesso {
+    margin-top: 25px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #46B1E1;
+    cursor: pointer;
+}
+
+.cadastre-se {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+/* Campo de data e select */
+input[type="date"],
+select {
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+select option {
+    font-size: 16px;
+}
